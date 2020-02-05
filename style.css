@@ -1,20 +1,91 @@
+/* 
+
+
+*/ 
+*{ 
+    box-sizing: border-box;
+}
+
+
 body {
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+    max-width: 768px;
+    align-items: center;
+
+}
+
+.main-header {
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(39, 47, 70);
+    font-variant: all-small-caps;
+    padding: 20px 0;
+    margin: 0;
+}
+
+fieldset.contact-info .form-box {
     display: flex;
     flex-direction: column;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    background-color: darkslategrey;
-    color: white;
-    font-size: 2em;
-    padding: 15px 0;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
+.contact-info,
+.newsletter { 
+    padding: 15px 25px 25px 25px;
+    border: none;
 }
 
 
+
+
+
+
+
+/* ---STYLING ELEMENTS--- */
+
+.first-break {
+    border-bottom: 8px double #333;
+    border-top: 3px solid #333;
+    margin: 0 10px;
+}
+
+.second-break {
+    border: 2px solid #333;
+    margin: 0 10px;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+h4 {
+    color: rgb(138, 147, 155);
+}
+
+#zip {
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    border: none;
+    font-size: 16px;
+    font-style: italic;
+    text-align: right;
+    height: 40px;
+    margin: 10px 0 30px;
+    background-color: rgba(166, 174, 182, 0.219);
+    color: #b0b7bd;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    border-radius: 5%;
+    padding-right: 25px;
+}
+
+
+@media (min-width: 768px) {
+
+
+}

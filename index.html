@@ -5,39 +5,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Online Registration From</title>
         <link rel="stylesheet" href="normalize.css">
-        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>The Code Review</header>
+        
+        <h1 class="main-header">The Code Review</h1>
+        
+        <h2>Signup for our newsletter</h2>
+        <h4>Get the latest news on how your code is doing right in your inbox</h4>
 
-    <form action="index.html" method="post">
-            
-        <h1 class="title">Signup for our newsletter</h1>
+        <hr class="first-break">
 
-        <hr>
-            
-        <fieldset>
-            <legend>Contact Information</legend>
-              
+        <form action="index.html" method="post">
+        <fieldset class="contact-info">
+            <legend><h3>Contact Information</h3></legend>
+             
+            <div class="form-box">
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="user_name">
-              
+            <input type="text" id="name" name="user_name" placeholder="Required  ">
+            </div> 
+            <div class="form-box">
             <label for="mail">Email Address</label>
-            <input type="email" id="mail" name="user_email">
-
+            <input type="email" id="mail" name="user_email" placeholder="Required  ">
+            </div>
+            <div class="form-box">
             <label for="tel">Phone Number</label>
             <input type="tel" id="phone" name="user_phone"> 
-            
+            </div>
+            <div class="form-box">
             <label for="address">Street Address</label>
             <input type="text" id="address" name="user_address">
-
+            </div>
+            <div class="form-box">
             <label for="city">City</label>
             <input type="text" id="city" name="user_city">
-
+            </div>
+            <div class="form-box">
             <label for="state">State</label>
                 <select id="state" name="user_state">
                 <optgroup label="State">
+                    <option>Choose State</option>
                     <option value="alabama">Alabama</option>
                     <option value="alaska">Alaska</option>
                     <option value="arizona">Arizona</option>
@@ -91,17 +99,17 @@
                     <option value="wyoming">Wyoming</option>
                 </optgroup>
                 </select>
-                
+            </div>
+            <div class="form-box">
             <label for="zip">Zip Code</label>
             <input type="text" id="zip" name="user_zip">
-            
-        </fieldset>
-            
-        <hr>
+            </div> 
+        </fieldset> 
+       
+        <hr class="second-break">
 
-        <fieldset>
-              
-              <legend>Newsletter</legend>
+        <fieldset class="newsletter">
+              <legend><h3>Newsletter</h3></legend>
 
               <label>Select the newsletter you would like to receive</label>
               <br>
@@ -115,7 +123,6 @@
               <label for="javascript_news" class="light">Javascript News</label>
               <br>
 
-
               <label>Newsletter format</label>
               <br>
               <input type="checkbox" id="html" value="format_html" name="newsletter_format">
@@ -128,12 +135,16 @@
               <label for="comments">Other topics you'd like to hear about</label> <br>
               <textarea id="comments" name="user_comments"></textarea>
         </fieldset>  
-              
+            
+
         <button type="submit">Sign Up</button>
             
-    </form> 
+        </form> 
+    
+
+    <footer>
+    <p>Copyright The Code Review</p>
+    </footer>
+
 </body>
-<footer>
-<p>Copyright The Code Review</p>
-</footer>
 </html>
