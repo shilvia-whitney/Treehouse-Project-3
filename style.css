@@ -1,7 +1,4 @@
-/* 
 
-
-*/ 
 *{ 
     box-sizing: border-box;
 }
@@ -11,9 +8,9 @@ body {
     margin: 0 auto;
     font-family: 'Merriweather', serif;
     max-width: 768px;
-    align-items: center;
-
 }
+
+
 
 .main-header {
     text-align: center;
@@ -36,11 +33,6 @@ fieldset.contact-info .form-box {
 }
 
 
-
-
-
-
-
 /* ---STYLING ELEMENTS--- */
 
 .first-break {
@@ -60,6 +52,13 @@ h2, h4 {
 
 h4 {
     color: rgb(138, 147, 155);
+    margin-bottom: 40px;
+}
+
+legend {
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
@@ -72,17 +71,75 @@ select {
     font-size: 16px;
     font-style: italic;
     text-align: right;
-    height: 40px;
+    height: 50px;
     margin: 10px 0 30px;
     background-color: rgba(166, 174, 182, 0.219);
     color: #b0b7bd;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    border-radius: 5%;
+    border-radius: 9px;
     padding-right: 25px;
+}
+
+#comments {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-top: 15px;
+}
+
+#zip {
+    width: 50%;
+}
+
+.check-label {
+    display: flex;
+    color: rgb(138, 147, 155);
+    margin: 5px 0;
+}
+
+.light {
+    padding-left: 10px;
+}
+
+
+button {
+    border: none;
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 9px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: lightslategrey;
 }
 
 
 @media (min-width: 768px) {
 
+        fieldset.contact-info .form-box {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .form-box label {
+            flex-basis: 12rem;
+            margin: 10px 0px 30px 0px;
+        }
+
+        .form-box input, select {
+            flex-basis: 0;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        #zip {
+            flex: 0 25%;
+            
+        }
 
 }

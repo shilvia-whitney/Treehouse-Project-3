@@ -19,7 +19,7 @@
 
         <form action="index.html" method="post">
         <fieldset class="contact-info">
-            <legend><h3>Contact Information</h3></legend>
+            <legend>Contact Information</legend>
              
             <div class="form-box">
             <label for="name">Full Name</label>
@@ -31,7 +31,7 @@
             </div>
             <div class="form-box">
             <label for="tel">Phone Number</label>
-            <input type="tel" id="phone" name="user_phone"> 
+            <input type="tel" id="tel" name="user_phone"> 
             </div>
             <div class="form-box">
             <label for="address">Street Address</label>
@@ -109,38 +109,47 @@
         <hr class="second-break">
 
         <fieldset class="newsletter">
-              <legend><h3>Newsletter</h3></legend>
+              <legend>Newsletter</legend>
 
-              <label>Select the newsletter you would like to receive</label>
+              <label class="check-label">Select the newsletter you would like to receive</label>
               <br>
+
+              <div class="check-box">
               <input type="radio" id="html_news" value="html_news" name="html_news">
               <label for="html_news" class="light">HTML News</label>
+              </div>
               <br>
+              <div class="check-box">
               <input type="radio" id="css_news" value="css_news" name="css_news">
               <label for="css_news" class="light">CSS News</label>
+              </div>
               <br>
+              <div class="check-box">
               <input type="radio" id="javascript_news" value="javascript_news" name="javascript_news">
               <label for="javascript_news" class="light">Javascript News</label>
+              </div>
               <br>
-
-              <label>Newsletter format</label>
+              
+              <label class="check-label">Newsletter format</label>
+            
               <br>
+              <div class="check-box">
               <input type="checkbox" id="html" value="format_html" name="newsletter_format">
               <label class="light" for="html">HTML</label>
+              </div>
               <br>
+              <div class="check-box">
               <input type="checkbox" id="plain_text" value="format_plain_text" name="newsletter_format">
               <label class="light" for="plain_text">Plain Text</label>
+              </div>
               <br>
 
               <label for="comments">Other topics you'd like to hear about</label> <br>
               <textarea id="comments" name="user_comments"></textarea>
-        </fieldset>  
-            
 
-        <button type="submit">Sign Up</button>
-            
-        </form> 
-    
+              <button type="submit">Sign Up</button>
+        </fieldset>            
+        </form>
 
     <footer>
     <p>Copyright The Code Review</p>
